@@ -1,0 +1,30 @@
+/* Calculator using if else */
+<script>
+var num1=Number(prompt("Enter the first number"));
+var num2=Number(prompt("Enter the second number"));
+var op=prompt("Enter the operator");
+var result;
+
+document.write("First number:" +num1 +"<br>");
+document.write("Operator:" +op +"<br>");
+document.write("Second number:" +num2 +"<br>");
+
+if(op == "+") {
+	result= num1 + num2;
+}
+else if(op == "-"){
+	result= num1 - num2;
+}
+else if(op == "*"){
+	result= num1 * num2;
+}
+else if(op == "/"){
+	result= num1 / num2;
+}
+else{
+	result = "Invalid";
+}
+
+document.write("Answer : "+result);
+
+</script>

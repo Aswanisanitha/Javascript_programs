@@ -1,0 +1,54 @@
+/* constructor */
+
+<script>
+class marks{
+	constructor(m1,m2,m3,m4,m5){
+		this.m1=m1;
+		this.m2=m2;
+		this.m3=m3;
+		this.m4=m4;
+		this.m5=m5;	
+	}
+	display(){
+		document.write(
+			"Mark 1 : "+this.m1 +"<br>"+ 
+			"Mark 2 : "+this.m2 +"<br>"+ 
+			"Mark 3 : "+this.m3 +"<br>"+ 
+			"Mark 4 : "+this.m4 +"<br>"+ 
+			"Mark 5 : "+this.m5 +"<br>" );
+	}
+	totalmark(){
+		this.total = this.m1 + this.m2 + this.m3 + this.m4 +this.m5;
+		document.write("Total Marks = "+this.total +"<br>");  
+	}
+	avg(){
+		this.average = this.total / 5 ;
+		document.write("Average Mark = "+this.average +"<br>");
+	}
+	grade(){
+		if(this.average > 90){
+			document.write("Grade : A+");
+		} else if(this.average > 75) {
+			document.write("Grade : B+");
+		} else if(this.average > 60) {
+			document.write("Grade : C+");
+		} else if(this.average > 45) {
+			document.write("Grade : D+");
+		} else {
+			document.write("Grade : D");
+		}
+	}
+
+}
+let s1=Number(prompt("Enter Mark1:"));
+let s2=Number(prompt("Enter Mark2:"));
+let s3=Number(prompt("Enter Mark3:"));
+let s4=Number(prompt("Enter Mark4:"));
+let s5=Number(prompt("Enter Mark5:"));
+let m=new marks(s1,s2,s3,s4,s5);
+m.display();
+m.totalmark();
+m.avg();
+m.grade();
+
+</script>

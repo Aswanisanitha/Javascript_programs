@@ -1,0 +1,27 @@
+/* Calculator using switch */
+
+<script>
+var num1=Number(prompt("Enter first number"));
+var num2=Number(prompt("Enter second number"));
+var op=prompt("Enter operator");
+var result;
+
+document.write("First number : "+num1 +"<br>");
+document.write("Operator : "+op +"<br>");
+document.write("Second number : "+num2 +"<br>");
+
+switch(op){
+	case "+" :result = num1 + num2;
+		  break;
+	case "-" :result = num1 - num2;
+		  break;
+	case "*" :result = num1 * num2;
+		  break;	
+	case "/" :result = num1 / num2;
+		  break;
+	default  :result= "Invalid";	
+}
+
+document.write("Answer : "+result);
+
+</script>
